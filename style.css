@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Montserrat", sans-serif;
+}
+
+body{
+    background-color: #d20073;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    flex-direction: column;
+}
+
+.request_message{
+    width: 400px;
+    text-transform: capitalize;
+    background-color: #fff;
+    text-align: center;
+    color: green;
+    font-size: 13px;
+    padding: 14px;
+    margin-bottom: 20px;
+    border-radius: 20px;
+    box-shadow: 0 0 8px rgba(0, 0, 0,0.1);
+    animation:  anime 0.5s ease-out;
+
+}
+/* animation */
+@keyframes anime {
+    form {
+        transform: translateY(-70px);
+    }
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    padding: 10px;
+    border-radius: 6px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+.logo .logo-agence img {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 40px;
+    margin: auto;
+    padding-bottom: 8px;
+    
+}
+
+
+h5 {
+    text-align: center;
+    font-size: 13px;
+}
+
+/*------------------------ card ------------------ */
+
+
+/*------------------------------------------------------*/
+
+hr{ /* trait */
+    margin: 10px 0;
+    background-color: #003883;
+    border: 0;
+    height: 1px;
+    width: 100%;
+}
+
+.name-field {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.name-field div{
+    display: flex;
+    flex-direction: column;
+}
+
+.name-field div{
+    width: 49%;
+}
+
+input {
+    margin-bottom: 5px;
+    padding: 5px;
+    outline: 0;
+    border: 1px solid rgba(0, 0, 0 ,0.4);
+}
+
+input:focus{
+    border: 1px solid #17a2b8;
+}
+
+.card img {
+    display: center;
+    justify-content: center;
+    align-items: center;
+    height: 15px;
+    padding-left: 15px;
+    margin-left: 30px;
+}
+
+input , textarea {
+    padding: 10px;
+    resize: none;
+    outline: 0;
+    border: 1 solid #999;
+    border-radius: 5px;
+}
+
+button{
+    background-color: #003883;
+    color: #fff;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    margin-top: 18px;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+    padding: 10px;
+    transition: 0.5s;
+}
+
+button:hover {
+    transform: scale(1.02);
+}
+
+p{
+    text-align: center;
+    margin: 5px 0;
+    font-size: 12px;
+    padding: 5px;
+}
+
+@media(max-width:600px)
+{
+    form {
+        grid-template-columns: auto minmax(150px, 300px);
+    }
+}
